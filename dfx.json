@@ -1,18 +1,18 @@
 {
   "canisters": {
-    "hackathon-10-ambachain-backend": {
-      "main": "src/hackathon-10-ambachain-backend/main.mo",
+    "ambachain_backend": {
+      "main": "src/ambachain_backend/main.mo",
       "type": "motoko"
     },
-    "hackathon-10-ambachain-frontend": {
+    "ambachain_frontend": {
       "dependencies": [
-        "hackathon-10-ambachain-backend"
+        "ambachain_backend"
       ],
       "source": [
-        "src/hackathon-10-ambachain-frontend/dist"
+        "src/ambachain_frontend/dist"
       ],
       "type": "assets",
-      "workspace": "hackathon-10-ambachain-frontend"
+      "workspace": "ambachain_frontend"
     },
     "internet_identity": {
       "candid": "https://github.com/dfinity/internet-identity/releases/latest/download/internet_identity.did",
